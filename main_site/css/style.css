@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0b0b0b !important;
+    color: #00ff00 !important;
+    font-family: monospace, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#breach-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+#breach-modal.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-box {
+    background: #111;
+    border: 2px solid #ffcc00;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+    padding: 30px;
+    width: 500px;
+    text-align: center;
+    font-family: monospace;
+    color: #fff;
+    position: relative;
+}
+
+.modal-header {
+    color: #ff3333;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.modal-text {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 30px;
+    line-height: 1.4;
+}
+
+.button-container {
+    position: relative;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#abort-btn {
+    background: #ffcc00;
+    color: #000;
+    border: none;
+    padding: 10px 25px;
+    font-weight: bold;
+    font-family: monospace;
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+    /* Кнопка лежит поверх смайлика */
+    transition: transform 0.4s ease, opacity 0.3s ease;
+}
+
+#abort-btn.fall {
+    transform: translateY(120px) rotate(45deg);
+    opacity: 0;
+    pointer-events: none;
+}
+
+#hidden-smile {
+    position: absolute;
+    font-size: 22px;
+    color: #ff2200;
+    font-weight: bold;
+    font-family: monospace;
+    z-index: 1;
+    /* Смайлик ждет на заднем плане */
+}

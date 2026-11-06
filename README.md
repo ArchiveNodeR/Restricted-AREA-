@@ -1,4 +1,3 @@
-```text
 # Restricted AREA
 
 > *"Found this post on Reddit, posted by [deleted] 3 hours ago. 
@@ -11,3 +10,5 @@
 A web experiment exploring anti-user interface design, interactive horror mechanics, and spatial web breakdown.
 
 **Proceed at your own risk.**
+
+# UNDER CONSTRUCTION

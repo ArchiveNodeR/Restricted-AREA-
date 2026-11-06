@@ -4,14 +4,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Подключаем ИТОГОВЫЙ файл, который создаст сборщик -->
     <link href="./dist/output.css" rel="stylesheet">
+    <script src="./js/js.js" defer></script>
+    <title>Архив отчётов за 2004 год — Институт геофизических исследований</title>
 </head>
 
-<body>
-    <h1 class="text-3xl font-bold text-blue-600 text-center mt-10">
-        Tailwind v4 работает!
-    </h1>
+<body class="body">
+
+    <audio id="lamp-hum" loop>
+        <source src="./audio/lamp_hum.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="lamp-glitch" loop>
+        <source src="./audio/lamp_glitch.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="page-shell">
+        <table class="site-layout" role="presentation">
+            <tbody>
+                <tr>
+                    <td class="site-header" colspan="2">
+                        <div class="brand">
+                            <svg class="institute-mark" viewBox="0 0 64 64" aria-hidden="true">
+                                <circle cx="32" cy="32" r="28"></circle>
+                                <path d="M32 10 43 23 32 19 21 23 32 10Z"></path>
+                                <path d="M20 27h24v18H20zM25 31v10m7-10v10m7-10v10M17 49h30"></path>
+                            </svg>
+                            <div class="brand-copy">
+                                <p class="agency-name">Министерство природных ресурсов</p>
+                                <p class="institute-name">Институт геофизических исследований<br>и мониторинга подземных
+                                    вод</p>
+                            </div>
+                            <div class="archive-mark">АРХИВ<br><strong>2004</strong></div>
+                        </div>
+                        <hr>
+                        <p class="site-caption">Официальный информационный архив · Документы и материалы</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="breadcrumb" colspan="2">
+                        <a href="#">Главная</a> &gt; <a href="#">Архив документов</a> &gt; Отчёты за 2004 год
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sidebar">
+                        <h2>Архив отчётов</h2>
+                        <ul class="nav-list">
+                            <li><a href="#">Отчёты за 2004 год</a></li>
+                            <li><a href="#">Отчёты за 2005 год</a></li>
+                            <li><a href="#">Отчёты за 2006 год</a></li>
+                            <li><a href="#">Отчёты за 2007 год</a></li>
+                            <li><a href="#">Отчёты за 2008 год</a></li>
+                            <li><a href="#">Отчёты за 2009 год</a></li>
+                            <li><a href="#">Отчёты за 2010 год</a></li>
+                        </ul>
+                        <p class="sidebar-note">Материалы архива<br>систематизированы<br>по годам публикации.</p>
+                    </td>
+                    <td class="content-cell">
+                        <div class="div-topic">
+                            <p class="document-label">ТЕХНИЧЕСКИЙ ОТЧЁТ № 04-III/27</p>
+                            <h1>Отчёт о плановой дезинфекции дренажных систем и замене фильтров грубой очистки (квартал
+                                III, 2004)</h1>
+                            <table class="record-table" role="presentation">
+                                <tbody>
+                                    <tr>
+                                        <th>Дата составления</th>
+                                        <td>15 октября 2004 г.</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Подразделение</th>
+                                        <td>Сектор эксплуатации подземных резервуаров</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Статус документа</th>
+                                        <td>Для служебного пользования</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p>В соответствии с регламентом технического обслуживания подземных резервуаров № 4 и № 7,
+                                комиссия подтверждает выполнение регламентных работ. Доступ к прилегающим секторам
+                                ограничен до завершения регламента. По всем вопросам обращаться в канцелярию с 9:00 до
+                                17:00 в рабочие дни.</p>
+                            <p class="attachment">Приложение: <a href="#">Ведомость замены фильтров (скан, 214 КБ)</a>
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="site-footer" colspan="2">
+                        Институт геофизических исследований · Архивная копия страницы · 2004–2010
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 
 </html>
